@@ -3,10 +3,10 @@ message: "If you use this repository, cite the paper draft and the companion Ope
 authors:
   - family-names: James
     given-names: Praise
-title: "Instrument Groups and Invariants: A Physics-Derived Framework for Cross-Instrument Measurement"
+title: "When Do Cross-Instrument Invariants Help? A Group-Theoretic Audit of Measurement Transfer"
 year: 2026
 type: software
-abstract: "A physics-derived theory of cross-instrument measurement, with proofs, real cross-instrument experiments, and honest negative results."
+abstract: "A group-theoretic audit of when cross-instrument invariants help: one strong NIR positive case, a decision procedure, and honest boundary results for MOX, EEG, microscopy, mass spectrometry, Raman, and sequencing."
 keywords:
   - instrument invariance
   - calibration transfer

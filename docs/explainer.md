@@ -1,9 +1,23 @@
 # Two rulers, one table: a plain-English guide to instrument invariants
 
-This is the companion explainer for the paper *Instrument Groups and
-Invariants*. It assumes no mathematics beyond ratios and averages. Every term
-is defined where it first appears. If you want the formal version, read
+This is the companion explainer for the paper *When Do Cross-Instrument
+Invariants Help?*. It assumes no mathematics beyond ratios and averages. Every
+term is defined where it first appears. If you want the formal version, read
 `paper/draft.md`; if you want the intuition first, read this.
+
+**The short version.** An invariant helps when the instrument's allowed change
+is small enough to quotient out, and when you can measure a few samples shared
+with the other instrument. The strongest real case is near-infrared
+spectroscopy: with 80 corn samples measured on three instruments, two shared
+reference samples give R² 0.83–0.91 with no target labels, while raw transfer
+falls as low as −9.85. Calibration with five references is better (0.89–0.93),
+so the invariant's niche is the minimal-reference regime. Metal-oxide gas
+sensors are the opposite case: if every sensor can be replaced arbitrarily, gas
+identity is not observable at all. Microscopy flat-field correction and EEG
+baseline normalization are real invariants, but they are classical. DNA
+sequencing is not affine, so normalization does not fix fine-grained signal.
+The paper's contribution is the decision procedure and the boundary map, not a
+new algorithm.
 
 ---
 

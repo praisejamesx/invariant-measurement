@@ -157,7 +157,7 @@ def patch_docx(src: Path, dst: Path) -> None:
     def keep_table_caption(match: re.Match[str]) -> str:
         block = match.group(0)
         text = "".join(re.findall(r"<w:t[^>]*>(.*?)</w:t>", block, re.S))
-        if re.match(r"\s*Table\s+\d", text):
+        if re.match(r"\s*(Table|Box)\s+\d", text):
             block = add_keepnext_to_para(block)
         return block
 

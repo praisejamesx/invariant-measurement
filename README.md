@@ -1,8 +1,7 @@
-# Instrument Groups and Invariants
+# When Do Cross-Instrument Invariants Help?
 
-A research repository for a physics-derived theory of cross-instrument
-measurement, with proofs, real cross-instrument experiments, and honest
-negative results.
+A group-theoretic audit of measurement transfer, with proofs, real
+cross-instrument experiments, and honest boundary results.
 
 The central idea: an instrument induces a transformation group on a measurement
 space. The device-invariant content of a measurement is the quotient by that
@@ -12,6 +11,13 @@ m/z calibration for mass spectrometry, a smooth illumination field for
 microscopy, and a stochastic error channel for DNA sequencing. The group
 determines what is observable: if the group is as large as the measurement
 space, no nonconstant invariant exists.
+
+The audit has one strong positive case and several boundary cases. On the Corn
+NIR data, a label-free two-reference invariant transfers at R² 0.83–0.91 where
+raw transfer falls as low as −9.85. MOX is a boundary case: the full per-sensor
+affine group makes gas identity unobservable, and labelled calibration beats
+the restricted invariant. The paper's contribution is the decision procedure
+and the boundary map, not a new state-of-the-art algorithm.
 
 The framework is a synthesis of measurement theory (Klein, Stevens, Krantz et
 al.), invariant theory (Weyl, Mumford, Olver), calibration transfer (Wang &
@@ -240,7 +246,7 @@ If you use this repository, cite the paper draft and the companion paper:
 ```bibtex
 @misc{james2026invariants,
   author = {James, Praise},
-  title  = {Instrument Groups and Invariants: A Physics-Derived Framework for Cross-Instrument Measurement},
+  title  = {When Do Cross-Instrument Invariants Help? A Group-Theoretic Audit of Measurement Transfer},
   year   = {2026},
   note   = {Manuscript and code: OpenSmell/invariant-measurement}
 }
@@ -262,5 +268,5 @@ It does not claim that invariance solves interoperability. It does not claim
 that the derived groups are exact. It does not claim that synthetic instrument
 transforms are recordings from real second instruments. It does not claim
 priority for invariance, calibration transfer, or domain adaptation. The
-contribution is the synthesis, the physics-derived groups, the observability
-boundaries, the dataset-fitness table, and the honest negatives.
+contribution is the decision procedure, the NIR positive case, the
+observability boundaries, the dataset-fitness table, and the honest negatives.

@@ -1,7 +1,7 @@
-# Instrument Groups and Invariants: A Physics-Derived Framework for Cross-Instrument Measurement
+# When Do Cross-Instrument Invariants Help? A Group-Theoretic Audit of Measurement Transfer
 
 **Praise James**  
-OpenSmell / Eigenware Labs 
+OpenSmell / Eigenware Labs  
 Draft — November 2026
 
 ---
@@ -9,42 +9,44 @@ Draft — November 2026
 ## Abstract
 
 Two instruments measuring the same sample return different numbers. The
-question is not whether the numbers differ, but whether there is a principled
-object, computable from the measurements, that does not. We formalize an
-instrument as a transformation group acting on a measurement space and define
-the device-invariant content of a measurement as the quotient. The group is
-derived from the instrument's physics rather than chosen for convenience:
-metal-oxide gas sensors give an affine group in log space; Beer–Lambert
-spectroscopy gives a per-wavelength affine group; EEG and MEG give a
-per-channel affine group plus a reference transform; mass spectrometry gives an
-affine map on the m/z axis; microscopy gives a smooth illumination field; DNA
-sequencing gives a stochastic error channel that is not affine.
+practical question is when a principled object, computable from the
+measurements, survives the change. We formalize an instrument as a
+transformation group acting on measurement space and identify the
+device-invariant content with the quotient. The group is derived from the
+instrument's physics rather than chosen for convenience: metal-oxide gas
+sensors give an affine group in log space; Beer–Lambert spectroscopy gives a
+per-wavelength affine group; EEG and MEG give a per-channel affine group plus a
+reference transform; mass spectrometry gives an affine map on the m/z axis;
+microscopy gives a smooth illumination field; DNA sequencing gives a stochastic
+error channel that is not affine.
+
+The strongest practical case is near-infrared spectroscopy. On the Corn data
+(80 samples, three instruments), a per-wavelength affine group is an adequate
+model (oracle R² ≥ 0.9985), and a label-free invariant built from two reference
+samples transfers at R² 0.83–0.91 across all six instrument pairs, while raw
+transfer falls as low as −9.85. Calibration with five reference spectra is
+slightly better on average (0.89–0.93), but it needs more references; the
+invariant needs two anchors, and anchor conditioning is part of the algorithm.
+The reference-count experiment makes the distinction concrete: more references
+improve the section, not the quotient.
 
 The group determines what is observable. We prove that the full per-sensor
 affine group is transitive on a single MOX measurement vector, so the quotient
-is a point and no nonconstant invariant exists; gas identity is not observable
-under arbitrary sensor replacement. Restricting to per-sensor gain leaves
-cross-sensor slope ratios, which are stable for five of six gases in the UCI
-drift data. For per-wavelength spectroscopy, two reference samples per
-instrument are necessary and sufficient, and the cross-sample ratio is
-invariant at every wavelength. For sequencing, a substitution-only channel is
-linear on k-mer frequencies, but indels and context-dependent errors make it
-nonlinear; no general low-dimensional affine invariant exists.
+is a point and gas identity is unobservable under arbitrary sensor replacement.
+The restricted per-sensor gain group leaves cross-sensor slope ratios; its
+exact empirical invariant, batch centering, reaches 0.515 pooled against 0.390
+raw, but calibration with five labelled target samples per class reaches 0.711.
+For per-wavelength spectroscopy, two reference samples are necessary and
+sufficient for the invariant. For sequencing, the error channel is not affine,
+and platform normalization does not recover fine-grained haplotype signal.
 
-We test the framework on real cross-instrument data and on labelled
-real-signal/synthetic-instrument experiments. NIR transfer on the Corn data (80
-samples, 3 instruments) reaches R² 0.83–0.91 with a two-reference invariant,
-against raw transfer as low as −9.85. MOX cross-batch accuracy rises from 0.390
-(raw) to 0.482 (normalized selectivity) and 0.711 with five labelled target
-samples per class; the exact per-sensor gain invariant (batch centering)
-reaches 0.515 pooled but 0.451 per-batch, competitive with selectivity. The
-common-gain invariant (pairwise log ratios) reaches 0.436, illustrating that
-invariance and information trade off. Real EEG, Raman, and microscopy signals
-show where the group model holds and where a reference transform breaks it.
-The paper includes a dataset-fitness table that separates genuine
-cross-instrument evidence from temporal drift and simulation. The framework
-does not replace calibration transfer or domain adaptation; it derives the
-group those methods assume and states when no invariant can exist.
+The paper is an audit, not a new state-of-the-art algorithm. It contributes a
+decision procedure, a boundary map of where invariants fail, and a
+dataset-fitness table that separates real cross-instrument evidence from
+temporal drift and simulation. The practical message is that invariance and
+calibration are two parts of one object: the quotient and its section. The
+framework does not replace calibration transfer or domain adaptation; it
+derives the group those methods assume and states when no invariant can exist.
 
 **Keywords:** instrument invariance, measurement theory, calibration transfer,
 domain adaptation, electronic nose, near-infrared spectroscopy, mass
@@ -80,7 +82,35 @@ acting on measurement space, derive the group from the instrument equations,
 and compute the quotient. The quotient is the device-invariant representation.
 The size of the group determines what survives.
 
-### 1.2 Three instruments, one table
+### 1.2 The short answer
+
+The audit has one clear positive case and several boundary cases.
+
+- **NIR is the positive case.** The per-wavelength affine group is adequate
+  (oracle R² ≥ 0.9985). A label-free invariant built from two conditioned
+  reference samples transfers at R² 0.83–0.91 across all six ordered pairs of
+  the Corn instruments; raw transfer falls as low as −9.85. Five reference
+  spectra reach 0.89–0.93, so calibration is still better when more references
+  are available. The invariant's niche is the minimal-reference regime.
+- **MOX is a boundary case.** The full per-sensor affine group is transitive on
+  a single measurement vector, so gas identity is not observable under
+  arbitrary sensor replacement. Under the restricted gain group, batch
+  centering reaches 0.515 pooled against 0.390 raw, but labelled calibration
+  reaches 0.711. The invariant is real but not the best classifier.
+- **EEG and microscopy are real-signal demonstrations of classical
+  corrections.** Baseline normalization is the per-channel gain+offset
+  invariant; flat-field correction is the illumination invariant. Both work,
+  and both were known before this paper. The framework explains why they work
+  and when a reference transform breaks them.
+- **Raman, mass spectrometry, and sequencing are limits.** Raman is
+  underpowered, mass spectrometry is synthetic here, and the sequencing error
+  channel is not affine. These are results about where the method stops, not
+  failures to tune.
+
+Box 2, after the contributions, condenses this into a decision guide for a new
+instrument.
+
+### 1.3 Three instruments, one table
 
 > **Box 1 — Three instruments, one table.**
 >
@@ -110,37 +140,56 @@ affine map; it is deciding which group each instrument induces, proving what
 the quotient retains, and recognizing when the group is so large that the
 quotient is a point.
 
-### 1.3 Contributions
+### 1.4 Contributions
 
 This paper makes five contributions.
 
-1. **A formal instrument-group framework.** We define measurement space,
-   instrument group, orbit, quotient, invariant field, and observability in one
-   place and use the same definitions across modalities (Section 2).
-2. **Physics-derived groups.** We derive the group from the instrument
-   equations for MOX, NIR/Raman, mass spectrometry, EEG/MEG, microscopy, and
-   sequencing (Section 3). The derivations are collected in
+1. **A decision procedure and practical guide.** We turn the group calculus
+   into a sequence of decisions for a new instrument: write the instrument
+   equation, derive the group, count dimensions, choose the quotient or the
+   section, condition the anchors, and validate the group (Section 6.7 and
+   Box 2). This is the artifact a practitioner can use without adopting the
+   whole formalism.
+2. **A label-free two-reference invariant for per-wavelength affine
+   instruments.** We prove that two references are necessary and sufficient
+   for the quotient, and validate it on the real three-instrument Corn NIR
+   data: R² 0.83–0.91 across all six pairs with no target labels, against raw
+   transfer as low as −9.85. Anchor conditioning is part of the algorithm, not
+   a preprocessing detail (Section 5.3).
+3. **A formal instrument-group framework and physics-derived groups.** We
+   define measurement space, instrument group, orbit, quotient, invariant
+   field, and observability in one place and derive the group from the
+   instrument equations for MOX, NIR/Raman, mass spectrometry, EEG/MEG,
+   microscopy, and sequencing (Sections 2–3). The derivations are collected in
    `invmath/groups.py` and verified symbolically.
-3. **Observability theorems.** We prove that the full per-sensor affine group
+4. **Observability theorems.** We prove that the full per-sensor affine group
    is transitive on a single MOX vector, so gas identity is not observable
    under arbitrary sensor replacement; that per-wavelength affine spectroscopy
    has a non-trivial quotient requiring two references; and that the sequencing
    error channel is not affine, so no general low-dimensional invariant exists
    (Section 4).
-4. **Cross-instrument experiments.** We test the framework on the UCI MOX
-   drift data (13,910 measurements, 10 batches), the Corn NIR data (80 samples,
-   3 instruments), real EEG, Raman, and microscopy signals with labelled
-   synthetic instrument transforms, controlled synthetic mass spectra, and
-   simulated sequencing reads on the real phiX174 genome (Section 5).
-5. **A dataset-fitness table and honest negatives.** We state which public
-   datasets actually support cross-instrument claims, which are temporal drift
-   on one device, and which are simulations (Section 5.9). We report the
+5. **A dataset-fitness table and a boundary map of negatives.** We state which
+   public datasets actually support cross-instrument claims, which are temporal
+   drift on one device, and which are simulations (Section 5.9). We report the
    negative results: the full MOX group destroys gas identity, the common-gain
    invariant is not the best classifier, the exact per-sensor gain invariant is
    competitive but not better per-batch, the Raman data are underpowered, and
    platform normalization does not rescue fine-grained sequencing.
 
-### 1.4 Evidence labels
+**Box 2 — Practical decision guide.** The table is deliberately coarse; the
+sections that follow give the caveats. "References" means samples measured on
+both instruments, not labelled target samples.
+
+| family | group and invariant | references | practical verdict |
+|---|---|---|---|
+| NIR / Raman | per-wavelength affine \(A'_\lambda=g_\lambda A_\lambda+o_\lambda\); ratio to two anchor samples | 2 conditioned anchors | Use for NIR when target labels are unavailable; calibration is better when labels exist. Raman needs more spectra than the 17 here. |
+| MOX | per-sensor gain in log space (fixed exponent); batch centering or slope ratios | 0 (an unlabelled batch) | Use for drift under a fixed exponent. If the exponent or full affine map changes, no gas identity survives; calibrate. |
+| EEG / MEG | per-channel gain and offset; baseline ratio | 0 | Use when the reference is fixed. A common-reference change is outside the group and breaks the invariant. |
+| Microscopy | smooth illumination field; flat-field ratio | 1 blank field | Use whenever illumination is the nuisance. This is the classical flat-field correction. |
+| Mass spectrometry | affine m/z map; two-peak calibration | 2 peaks | Use for m/z shift. Fragmentation is not affine and is outside the group. |
+| DNA sequencing | non-affine error channel; no general low-dimensional invariant | — | Do not rely on affine normalization for fine-grained signal. |
+
+### 1.5 Evidence labels
 
 Every empirical claim in this paper carries one of four labels.
 
@@ -156,7 +205,7 @@ algorithm recovers a group that is known to be present; it cannot establish
 that a real instrument induces that group. The dataset-fitness table in
 Section 5.9 records the distinction.
 
-### 1.5 Relation to prior work
+### 1.6 Relation to prior work
 
 The ingredients of this paper are old. Klein's Erlanger Programm defines a
 geometry by its group [@klein1872; @klein1893]. Stevens and the representational
@@ -673,7 +722,10 @@ and RMSE for regression; Dice overlap for segmentation. The code is in
 `experiments/`; the numbers in this section are generated by
 `experiments/aggregate.py` from the CSVs in `results/`.
 
-### 5.2 MOX: UCI drift
+### 5.2 MOX: UCI drift (a boundary case)
+
+MOX is the clearest example of a group that is too large for identification.
+The experiment is included to delimit the framework, not to headline it.
 
 **Data.** The UCI Gas Sensor Array Drift dataset contains 13,910 measurements
 from a 16-sensor array, 6 gases, and 10 batches collected over 36 months
@@ -799,7 +851,11 @@ an invariant. This is the central empirical trade-off of the paper: invariance
 buys robustness at the cost of information, and the exact invariant is only as
 good as the group it assumes.
 
-### 5.3 NIR: Corn, three instruments
+### 5.3 NIR: Corn, three instruments (the positive case)
+
+NIR is the strongest practical evidence in the paper: the group is adequate,
+the same physical samples are measured on three real instruments, and the
+invariant is label-free.
 
 **Data.** The Corn dataset contains 80 physical samples measured on three NIR
 instruments (m5, mp5, mp6) at 700 wavelengths, with reference values for
@@ -1191,17 +1247,14 @@ real signal with a synthetic group. Purple: synthetic or derivation.*
 
 ### 6.1 What invariance buys
 
-The experiments support three claims.
+The experiments support four claims.
 
-1. **A derived group predicts the qualitative transfer pattern.** In NIR, the
-   per-wavelength affine group is adequate (oracle R² ≥ 0.9985), raw transfer
-   fails for the distant instruments, and the two-reference invariant is
-   stable across all pairs (0.834–0.910). In MOX, the full per-sensor affine
-   group destroys the label, and the slope-ratio invariant is stable only under
-   the restricted exponent-fixed group. In EEG, the baseline invariant is best under the
-   per-channel gain+offset group and fails under a reference transform. The
-   group calculus predicts which representation works and when it stops
-   working.
+1. **The positive case is NIR.** The per-wavelength affine group is adequate
+   (oracle R² ≥ 0.9985), raw transfer fails for the distant instruments, and
+   the two-reference invariant is stable across all pairs (0.834–0.910). This
+   is the case a practitioner can use: when target labels are unavailable and
+   two conditioned anchors can be measured, the quotient transfers without a
+   section.
 
 2. **The number of references is a group property.** Two references suffice
    for a per-wavelength affine group; five do not improve the invariant
@@ -1209,7 +1262,14 @@ The experiments support three claims.
    The experiment separates the quotient from the section in a way that a
    generic "calibration transfer" comparison does not.
 
-3. **Invariance is not free.** The common-gain invariant in MOX (0.436) is
+3. **The boundary cases are predictable.** In MOX, the full per-sensor affine
+   group destroys the label, and the slope-ratio invariant is stable only under
+   the restricted exponent-fixed group. In EEG, the baseline invariant is best
+   under the per-channel gain+offset group and fails under a reference
+   transform. In sequencing, the error channel is not affine. The group
+   calculus predicts which representation works and when it stops working.
+
+4. **Invariance is not free.** The common-gain invariant in MOX (0.436) is
    worse than the log baseline (0.474); the exact per-sensor gain invariant
    (batch centering) is 0.515 pooled but 0.451 per-batch. The per-wavelength
    invariant in NIR is worse than SNV in *agreement* (0.878–0.972 vs 0.999)
@@ -1370,13 +1430,13 @@ framing explains why calibration transfer works, how many references are
 needed, and when no invariant can exist. It also explains why some
 "normalizations" fail: they quotient by the wrong group.
 
-The experiments support the framework where the group is adequate: NIR
-per-wavelength affine transfer reaches R² 0.83–0.91 with two references;
-MOX per-sensor gain invariance is exact under the restricted group; EEG
-baseline invariance is robust to gain and offset; microscopy flat-field
-correction recovers segmentation. They also delimit it: the full MOX group
-destroys gas identity, the Raman data are too small, and sequencing is not
-affine.
+The experiments give one strong positive case and a set of boundary results.
+NIR per-wavelength affine transfer reaches R² 0.83–0.91 with two references and
+no target labels. Under the restricted group, MOX per-sensor gain invariance is
+exact; EEG baseline invariance is robust to gain and offset; microscopy
+flat-field correction recovers segmentation. The boundary results delimit the
+claim: the full MOX group destroys gas identity, the Raman data are too small,
+mass spectrometry is synthetic here, and sequencing is not affine.
 
 The practical message is not that invariance replaces calibration. It is that
 invariance and calibration are two parts of one object: the quotient and its
