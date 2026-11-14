@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Downloaded or generated data. The manifest records provenance and hashes.
+data/raw/
+data/eeg/
+data/raman/
+data/sequencing/
+data/*.npz
+!data/manifest.json
+
+# Compiled paper
+paper/draft.pdf

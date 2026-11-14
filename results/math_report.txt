@@ -1,0 +1,40 @@
+========================================================================
+INSTRUMENT GROUPS AND INVARIANTS -- SYMBOLIC REPORT
+========================================================================
+
+[1] Aff(1) on one point: y -> k*y + d
+    Three-point ratio after the action:
+      (y1'-y2')/(y3'-y2') = (-y1 + y2)/(y2 - y3)
+    Five-point generating invariants all unchanged: True
+
+[2] Polynomial invariants of Aff(1)
+    degree 0: 1 monomials, free coefficients = 0, 
+    degree 1: 3 monomials, free coefficients = 0, no nonconstant invariant
+    degree 2: 6 monomials, free coefficients = 0, no nonconstant invariant
+    degree 3: 10 monomials, free coefficients = 0, no nonconstant invariant
+    Translation forces dependence on differences; scaling forces
+    homogeneous degree 0; hence the polynomial invariant ring is R.
+    The rational invariant field is R(r_3,...,r_n), degree n-2.
+
+[3] MOX power law s = a*C^b
+    k = b_B/b_A
+    d = log(a_B) - b_B*log(a_A)/b_A
+    reconstruction error = 0
+    three-point invariant error = 0
+
+[4] Cross-sensor observability hierarchy
+    model: y_{ik} = alpha_i + beta_i * x_k
+    single_sample_full_group: prod_i Aff(1): transitive on R^p; quotient is a point; invariant ring is R
+    multi_sample_full_group: row-wise affine cross-ratios survive; they describe the sample configuration, not a per-sample gas label
+    common_latent_model: row-wise cross-ratios are functions of x_k only, so they do not encode gas identity
+    restricted_group: per-sensor additive shift in log space (multiplicative gain in linear response): alpha_i -> alpha_i + delta_i, beta_i fixed
+    restricted_group_invariants: x-cross-ratios and beta_i/beta_j
+    conclusion: Observability is not a property of the sensor alone; it is a property of the pair (signal, group). Enlarging the group can destroy the label.
+
+[5] Beer-Lambert spectroscopy hierarchy
+    G_scale: {'action': 'A -> g*A, g>0', 'within_sample_invariants': 'A(l1)/A(l2)', 'dimension': 'p-1 for p wavelengths'}
+    G_affine: {'action': 'A -> g*A + o', 'within_sample_invariants': '(A(l1)-A(l2))/(A(l3)-A(l2))', 'dimension': 'p-2 for p wavelengths'}
+    G_per_lambda: {'action': 'A(l) -> g(l)*A(l) + o(l)', 'within_sample_invariants': 'none', 'cross_sample_invariants': '(A_i,l - A_1,l)/(A_2,l - A_1,l)', 'reference_requirement': '2 reference samples per instrument'}
+    per-wavelength ratio error = 0
+
+========================================================================

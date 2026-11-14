@@ -1,0 +1,98 @@
+[
+  {
+    "group": "gain",
+    "representation": "baseline",
+    "mean": 0.72,
+    "std": 0.231324687638633
+  },
+  {
+    "group": "gain",
+    "representation": "baseline_ratio",
+    "mean": 0.648,
+    "std": 0.20831599927887337
+  },
+  {
+    "group": "gain",
+    "representation": "global_norm",
+    "mean": 0.622,
+    "std": 0.16771669233826694
+  },
+  {
+    "group": "gain",
+    "representation": "raw",
+    "mean": 0.6679999999999999,
+    "std": 0.21688706738761535
+  },
+  {
+    "group": "gain_offset",
+    "representation": "baseline",
+    "mean": 0.834,
+    "std": 0.19800112233127476
+  },
+  {
+    "group": "gain_offset",
+    "representation": "baseline_ratio",
+    "mean": 0.734,
+    "std": 0.21019567603122152
+  },
+  {
+    "group": "gain_offset",
+    "representation": "global_norm",
+    "mean": 0.642,
+    "std": 0.2675734582419481
+  },
+  {
+    "group": "gain_offset",
+    "representation": "raw",
+    "mean": 0.686,
+    "std": 0.2673408145254127
+  },
+  {
+    "group": "gain_offset_reference",
+    "representation": "baseline",
+    "mean": 0.756,
+    "std": 0.2206656596150233
+  },
+  {
+    "group": "gain_offset_reference",
+    "representation": "baseline_ratio",
+    "mean": 0.544,
+    "std": 0.22858015856344333
+  },
+  {
+    "group": "gain_offset_reference",
+    "representation": "global_norm",
+    "mean": 0.632,
+    "std": 0.2487658425999125
+  },
+  {
+    "group": "gain_offset_reference",
+    "representation": "raw",
+    "mean": 0.696,
+    "std": 0.20844397062253658
+  },
+  {
+    "group": "identity",
+    "representation": "baseline",
+    "mean": 0.78,
+    "std": 0.0
+  },
+  {
+    "group": "identity",
+    "representation": "baseline_ratio",
+    "mean": 0.78,
+    "std": 0.0
+  },
+  {
+    "group": "identity",
+    "representation": "global_norm",
+    "mean": 0.8400000000000001,
+    "std": 0.0
+  },
+  {
+    "group": "identity",
+    "representation": "raw",
+    "mean": 0.74,
+    "std": 0.0
+  }
+]

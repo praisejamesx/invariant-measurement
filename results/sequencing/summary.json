@@ -1,0 +1,98 @@
+[
+  {
+    "task": "coarse",
+    "platform": "A",
+    "representation": "raw",
+    "accuracy": 1.0
+  },
+  {
+    "task": "coarse",
+    "platform": "A",
+    "representation": "platform_norm",
+    "accuracy": 0.9983333333333333
+  },
+  {
+    "task": "coarse",
+    "platform": "B_sub",
+    "representation": "raw",
+    "accuracy": 1.0
+  },
+  {
+    "task": "coarse",
+    "platform": "B_sub",
+    "representation": "platform_norm",
+    "accuracy": 0.9983333333333333
+  },
+  {
+    "task": "coarse",
+    "platform": "B_indel",
+    "representation": "raw",
+    "accuracy": 0.9966666666666667
+  },
+  {
+    "task": "coarse",
+    "platform": "B_indel",
+    "representation": "platform_norm",
+    "accuracy": 0.9966666666666667
+  },
+  {
+    "task": "coarse",
+    "platform": "B_context",
+    "representation": "raw",
+    "accuracy": 0.9933333333333333
+  },
+  {
+    "task": "coarse",
+    "platform": "B_context",
+    "representation": "platform_norm",
+    "accuracy": 0.9916666666666667
+  },
+  {
+    "task": "fine",
+    "platform": "A",
+    "representation": "raw",
+    "accuracy": 0.6616666666666666
+  },
+  {
+    "task": "fine",
+    "platform": "A",
+    "representation": "platform_norm",
+    "accuracy": 0.65
+  },
+  {
+    "task": "fine",
+    "platform": "B_sub",
+    "representation": "raw",
+    "accuracy": 0.6433333333333333
+  },
+  {
+    "task": "fine",
+    "platform": "B_sub",
+    "representation": "platform_norm",
+    "accuracy": 0.6316666666666667
+  },
+  {
+    "task": "fine",
+    "platform": "B_indel",
+    "representation": "raw",
+    "accuracy": 0.665
+  },
+  {
+    "task": "fine",
+    "platform": "B_indel",
+    "representation": "platform_norm",
+    "accuracy": 0.6366666666666667
+  },
+  {
+    "task": "fine",
+    "platform": "B_context",
+    "representation": "raw",
+    "accuracy": 0.65
+  },
+  {
+    "task": "fine",
+    "platform": "B_context",
+    "representation": "platform_norm",
+    "accuracy": 0.63
+  }
+]

@@ -1,0 +1,175 @@
+{
+  "n": 13910,
+  "n_batches": 10,
+  "feature_means": {
+    "raw": {
+      "accuracy": 0.4051986632008912,
+      "balanced_accuracy": 0.3583432042232226,
+      "macro_f1": 0.2667311767814935
+    },
+    "log": {
+      "accuracy": 0.47441515038989973,
+      "balanced_accuracy": 0.46061006701626606,
+      "macro_f1": 0.359399289288338
+    },
+    "log_ratio": {
+      "accuracy": 0.4357965094689937,
+      "balanced_accuracy": 0.3999905119885489,
+      "macro_f1": 0.3309326095463398
+    },
+    "global_gain": {
+      "accuracy": 0.4550315633122911,
+      "balanced_accuracy": 0.441763185675909,
+      "macro_f1": 0.33995914905503294
+    },
+    "batch_center": {
+      "accuracy": 0.5149647233568511,
+      "balanced_accuracy": 0.49017516201979383,
+      "macro_f1": 0.485752728550088
+    },
+    "batch_center_ratio": {
+      "accuracy": 0.4760490159673227,
+      "balanced_accuracy": 0.4823038053747552,
+      "macro_f1": 0.4529682278199109
+    },
+    "batch_zscore": {
+      "accuracy": 0.45659116227255847,
+      "balanced_accuracy": 0.44284563611335964,
+      "macro_f1": 0.45037660381801214
+    },
+    "selectivity": {
+      "accuracy": 0.4831786112142592,
+      "balanced_accuracy": 0.47478208781521536,
+      "macro_f1": 0.39238308121338267
+    },
+    "rank": {
+      "accuracy": 0.30285926476049013,
+      "balanced_accuracy": 0.31809191683369503,
+      "macro_f1": 0.22118011882264746
+    }
+  },
+  "group_stress": [
+    {
+      "group": "identity",
+      "feature": "log",
+      "mean_accuracy": 0.9865470852017937,
+      "lo": 0.9865470852017937,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "identity",
+      "feature": "global_gain",
+      "mean_accuracy": 0.9865470852017937,
+      "lo": 0.9865470852017937,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "identity",
+      "feature": "batch_center",
+      "mean_accuracy": 0.9865470852017937,
+      "lo": 0.9865470852017937,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "global_gain",
+      "feature": "log",
+      "mean_accuracy": 0.9820627802690582,
+      "lo": 0.9775784753363229,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "global_gain",
+      "feature": "global_gain",
+      "mean_accuracy": 0.9865470852017937,
+      "lo": 0.9865470852017937,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "global_gain",
+      "feature": "batch_center",
+      "mean_accuracy": 0.984304932735426,
+      "lo": 0.9746636771300449,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "per_sensor_gain",
+      "feature": "log",
+      "mean_accuracy": 0.4372197309417041,
+      "lo": 0.24630044843049326,
+      "hi": 0.6748878923766817
+    },
+    {
+      "group": "per_sensor_gain",
+      "feature": "global_gain",
+      "mean_accuracy": 0.5,
+      "lo": 0.2830717488789238,
+      "hi": 0.6669282511210762
+    },
+    {
+      "group": "per_sensor_gain",
+      "feature": "batch_center",
+      "mean_accuracy": 0.9865470852017937,
+      "lo": 0.9865470852017937,
+      "hi": 0.9865470852017937
+    },
+    {
+      "group": "per_sensor_affine",
+      "feature": "log",
+      "mean_accuracy": 0.16816143497757846,
+      "lo": 0.06726457399103139,
+      "hi": 0.3492152466367713
+    },
+    {
+      "group": "per_sensor_affine",
+      "feature": "global_gain",
+      "mean_accuracy": 0.23038116591928254,
+      "lo": 0.08295964125560538,
+      "hi": 0.3727578475336323
+    },
+    {
+      "group": "per_sensor_affine",
+      "feature": "batch_center",
+      "mean_accuracy": 0.6502242152466369,
+      "lo": 0.4719730941704036,
+      "hi": 0.7457399103139014
+    }
+  ],
+  "slope_stability": [
+    {
+      "gas": 1,
+      "n_batches": 8,
+      "n_ratio_pairs": 120,
+      "median_relative_MAD": 0.061994832142599224
+    },
+    {
+      "gas": 2,
+      "n_batches": 7,
+      "n_ratio_pairs": 120,
+      "median_relative_MAD": 0.05951010539021083
+    },
+    {
+      "gas": 3,
+      "n_batches": 8,
+      "n_ratio_pairs": 120,
+      "median_relative_MAD": 0.28522736815591276
+    },
+    {
+      "gas": 4,
+      "n_batches": 9,
+      "n_ratio_pairs": 120,
+      "median_relative_MAD": 0.09282363450393163
+    },
+    {
+      "gas": 5,
+      "n_batches": 8,
+      "n_ratio_pairs": 120,
+      "median_relative_MAD": 0.04063174434550924
+    },
+    {
+      "gas": 6,
+      "n_batches": 4,
+      "n_ratio_pairs": 120,
+      "median_relative_MAD": 0.052512954356562835
+    }
+  ]
+}

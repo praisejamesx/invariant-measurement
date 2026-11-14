@@ -1,0 +1,10 @@
+instrument,property,representation,cv_r2
+m5,Protein,raw,0.9244293863141426
+m5,Protein,snv,0.9390169227003503
+m5,Protein,invariant,0.9229654867911041
+mp5,Protein,raw,0.9260327902405022
+mp5,Protein,snv,0.9013986008797656
+mp5,Protein,invariant,0.91821132333839
+mp6,Protein,raw,0.9148811587845526
+mp6,Protein,snv,0.8958598575373448
+mp6,Protein,invariant,0.9198965573528636

@@ -1,0 +1,101 @@
+{
+  "uci_drift": {
+    "n": 13910,
+    "n_features": 128,
+    "n_sensors": 16,
+    "n_batches": 10,
+    "gases": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "batch_sizes": [
+      445,
+      1244,
+      1586,
+      161,
+      197,
+      2300,
+      3613,
+      294,
+      470,
+      3600
+    ]
+  },
+  "corn": {
+    "n_samples": 80,
+    "n_wavelengths": 700,
+    "instruments": [
+      "m5",
+      "mp5",
+      "mp6"
+    ],
+    "wavelength_range_nm": [
+      1100.0,
+      2498.0
+    ],
+    "properties": [
+      "Moisture",
+      "Oil",
+      "Protein",
+      "Starch"
+    ]
+  },
+  "files": {
+    "corn.npz": {
+      "sha256": "2d381792f6bcffae6d59c18b602de93e41fa9da145b99120f46b17593dd77abd",
+      "bytes": 1029251
+    },
+    "raw/corn/corn.mat": {
+      "sha256": "e28fd4be274a54ca57b1f2c67ef5a8bf4981f8314bcc73e4c64836fe658c46b5",
+      "bytes": 1445616
+    },
+    "raw/uci/batch1.dat": {
+      "sha256": "6b62f3e71b90f95dd9c2157fa91ffce32571faa7f474dd52f29a4ae769144625",
+      "bytes": 757889
+    },
+    "raw/uci/batch10.dat": {
+      "sha256": "b8309e8ff205b9d0350761989809f31f8feaefb8582aecb05f1d0f694b91184e",
+      "bytes": 6086679
+    },
+    "raw/uci/batch2.dat": {
+      "sha256": "4ea9490068457badf9efd0c22f359fbfce12c208cdd440526b97ac91d31b9002",
+      "bytes": 2134300
+    },
+    "raw/uci/batch3.dat": {
+      "sha256": "aabf06bf8b8200740156235dc59458e06d99aa8faba4d6764a22c6b6c2674ff4",
+      "bytes": 2725224
+    },
+    "raw/uci/batch4.dat": {
+      "sha256": "ffc87c5146001bbe8ce90c4b2f7dad5b390ca3079f51b559032df53ffe5ff0af",
+      "bytes": 278400
+    },
+    "raw/uci/batch5.dat": {
+      "sha256": "dcad4939c300a6c7d9f41b9470a9253eecc0ebc5c2c4e940d8ae20b8fc4240d0",
+      "bytes": 341379
+    },
+    "raw/uci/batch6.dat": {
+      "sha256": "297d3a8b594dee4e2f4d7d2c4f5c485939fa708c10b5a11ed5cce95e05049afb",
+      "bytes": 3928247
+    },
+    "raw/uci/batch7.dat": {
+      "sha256": "eb5801d38a59beaae4a2412195d8ded790175ed1611159e083649ee9fe03d150",
+      "bytes": 6159116
+    },
+    "raw/uci/batch8.dat": {
+      "sha256": "58146b3e2dd68b125b2d5432cdd4968ec1fff47464ceb04282382181932d49be",
+      "bytes": 495298
+    },
+    "raw/uci/batch9.dat": {
+      "sha256": "51f368ae8dee5d285be7f2029770e10eb12f342578830bc40ea852db19d19c9b",
+      "bytes": 791293
+    },
+    "uci_drift.npz": {
+      "sha256": "13d672fc2140f84d283553c884ad1aa74b157b257594e784f32745d3b4df985f",
+      "bytes": 7799137
+    }
+  }
+}

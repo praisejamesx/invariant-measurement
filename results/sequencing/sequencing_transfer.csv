@@ -1,0 +1,17 @@
+task,platform,representation,accuracy
+coarse,A,raw,1.0
+coarse,A,platform_norm,0.9983333333333333
+coarse,B_sub,raw,1.0
+coarse,B_sub,platform_norm,0.9983333333333333
+coarse,B_indel,raw,0.9966666666666667
+coarse,B_indel,platform_norm,0.9966666666666667
+coarse,B_context,raw,0.9933333333333333
+coarse,B_context,platform_norm,0.9916666666666667
+fine,A,raw,0.6616666666666666
+fine,A,platform_norm,0.65
+fine,B_sub,raw,0.6433333333333333
+fine,B_sub,platform_norm,0.6316666666666667
+fine,B_indel,raw,0.665
+fine,B_indel,platform_norm,0.6366666666666667
+fine,B_context,raw,0.65
+fine,B_context,platform_norm,0.63

@@ -1,0 +1,7 @@
+group,representation,mean_accuracy,std
+identity,raw,1.0,0.0
+identity,calibrated,1.0,0.0
+affine,raw,0.7766666666666666,0.27875915530555523
+affine,calibrated,1.0,0.0
+affine_fragmentation,raw,0.77,0.288474917068673
+affine_fragmentation,calibrated,0.9700000000000001,0.00760116950066093

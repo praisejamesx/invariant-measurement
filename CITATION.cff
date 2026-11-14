@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite the paper draft and the companion OpenSmell paper."
+authors:
+  - family-names: James
+    given-names: Praise
+title: "Instrument Groups and Invariants: A Physics-Derived Framework for Cross-Instrument Measurement"
+year: 2026
+type: software
+abstract: "A physics-derived theory of cross-instrument measurement, with proofs, real cross-instrument experiments, and honest negative results."
+keywords:
+  - instrument invariance
+  - calibration transfer
+  - domain adaptation
+  - electronic nose
+  - near-infrared spectroscopy
+  - mass spectrometry
+  - EEG
+  - DNA sequencing
+references:
+  - type: software
+    title: "Towards Interoperable Digital Olfaction: A Modular Feature Framework for Metal-Oxide Semiconductor Electronic Noses"
+    authors:
+      - family-names: James
+        given-names: Praise
+    year: 2026
+    doi: "10.5281/zenodo.21243013"

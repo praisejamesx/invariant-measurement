@@ -1,0 +1,38 @@
+[
+  {
+    "group": "identity",
+    "representation": "raw",
+    "mean_accuracy": 1.0,
+    "std": 0.0
+  },
+  {
+    "group": "identity",
+    "representation": "calibrated",
+    "mean_accuracy": 1.0,
+    "std": 0.0
+  },
+  {
+    "group": "affine",
+    "representation": "raw",
+    "mean_accuracy": 0.7766666666666666,
+    "std": 0.27875915530555523
+  },
+  {
+    "group": "affine",
+    "representation": "calibrated",
+    "mean_accuracy": 1.0,
+    "std": 0.0
+  },
+  {
+    "group": "affine_fragmentation",
+    "representation": "raw",
+    "mean_accuracy": 0.77,
+    "std": 0.288474917068673
+  },
+  {
+    "group": "affine_fragmentation",
+    "representation": "calibrated",
+    "mean_accuracy": 0.9700000000000001,
+    "std": 0.00760116950066093
+  }
+]

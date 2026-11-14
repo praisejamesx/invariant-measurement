@@ -1,0 +1,79 @@
+# References
+
+Generated from `paper/refs.bib`; the BibTeX file is the source of truth.
+
+- Arjovsky, M., Bottou, L., Gulrajani, I., and Lopez-Paz, D. (2019). *Invariant risk minimization*. arXiv preprint arXiv:1907.02893.
+- Barnes, R., Dhanoa, M., and Lister, S. (1989). *Standard normal variate transformation and de-trending of near-infrared diffuse reflectance spectra*. Applied Spectroscopy. 43(5), 772–777.
+- Barsan, N. and Weimar, U. (2001). *Conduction model of metal oxide gas sensors*. Journal of Electroceramics. 7(3), 143–167.
+- Barsan, N. and Weimar, U. (2003). *Understanding the fundamental principles of metal oxide based gas sensors; the example of CO sensing with SnO2 sensors in the presence of humidity*. Journal of Physics: Condensed Matter. 15(20), R813.
+- Ben-David, S., Blitzer, J., Crammer, K., Kulesza, A., Pereira, F., and Vaughan, J. (2010). *A theory of learning from different domains*. Machine Learning. 79(1–2), 151–175.
+- Bouveresse, E. and Massart, D. (1996). *Standardization of near-infrared spectrometric instruments: a review*. Chemometrics and Intelligent Laboratory Systems. 32(2), 91–110.
+- Bronstein, M., Bruna, J., Cohen, T., and Velicković, P. (2021). *Geometric deep learning: grids, groups, graphs, geodesics, and gauges*. arXiv preprint arXiv:2104.13478.
+- Burns, D. and Ciurczak, E. (2007). *Handbook of Near-Infrared Analysis*. CRC Press.
+- Caicedo, J., Cooper, S., Heigwer, F., Warchal, S., Qiu, P., Molnar, C., Vasilevich, A., Barry, J., Bansal, H., Kraus, O., and others. (2017). *Data-analysis strategies for image-based cell profiling*. Nature Methods. 14(9), 849–863.
+- Carpenter, A., Jones, T., Lamprecht, M., Clarke, C., Kang, I., Friman, O., Guertin, D., Chang, J., Lindquist, R., Moffat, J., and others. (2006). *CellProfiler: image analysis software for identifying and quantifying cell phenotypes*. Genome Biology. 7(10), R100.
+- Cohen, T. and Welling, M. (2016). *Group equivariant convolutional networks*. Proceedings of the 33rd International Conference on Machine Learning. 2990–2999.
+- Cohen, T., Weiler, M., Kicanaoglu, B., and Welling, M. (2019). *Gauge equivariant convolutional networks and the icosahedral CNN*. Proceedings of the 36th International Conference on Machine Learning. 1321–1330.
+- Coxeter, H. (2003). *Projective Geometry*. Springer.
+- Dryden, I. and Mardia, K. (2016). *Statistical Shape Analysis with Applications in R*. Wiley.
+- Eigenvector Research. (2026). *Corn near-infrared data set*. https://eigenvector.com/resources/data-sets/.
+- Fearn, T. (2001). *Standardisation and calibration transfer for near infrared instruments: a review*. Journal of Near Infrared Spectroscopy. 9(4), 229–244.
+- Fonollosa, J., Sheik, S., Huerta, R., and Marco, S. (2015). *Reservoir computing compensates slow response of chemosensor arrays exposed to fast varying gas concentrations in continuous monitoring*. Sensors and Actuators B: Chemical. 215, 618–629.
+- Ganin, Y., Ustinova, E., Ajakan, H., Germain, P., Larochelle, H., Laviolette, F., Marchand, M., and Lempitsky, V. (2016). *Domain-adversarial training of neural networks*. Journal of Machine Learning Research. 17(59), 1–35.
+- Geladi, P., MacDougall, D., and Martens, H. (1985). *Linearization and scatter-correction for near-infrared reflectance spectra of meat*. Applied Spectroscopy. 39(3), 491–500.
+- Glish, G. and Vachet, R. (2003). *The basics of mass spectrometry in the twenty-first century*. Nature Reviews Drug Discovery. 2(2), 140–150.
+- Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P., Mark, R., Mietus, J., Moody, G., Peng, C., and Stanley, H. (2000). *PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals*. Circulation. 101(23), e215–e220.
+- Goodwin, S., McPherson, J., and McCombie, W. (2016). *Coming of age: ten years of next-generation sequencing technologies*. Nature Reviews Genetics. 17(6), 333–351.
+- Gramfort, A., Luessi, M., Larson, E., Engemann, D., Strohmeier, D., Brodbeck, C., Goj, R., Jas, M., Brooks, T., Parkkonen, L., and Hämäläinen, M. (2013). *MEG and EEG data analysis with MNE-Python*. Frontiers in Neuroscience. 7, 267.
+- Gretton, A., Borgwardt, K., Rasch, M., Schölkopf, B., and Smola, A. (2012). *A kernel two-sample test*. Journal of Machine Learning Research. 13, 723–773.
+- Hilbert, D. (1893). *Über die vollen Invariantensysteme*. Mathematische Annalen. 42, 313–373.
+- Horai, H., Arita, M., Kanaya, S., Nihei, Y., Ikeda, T., Suwa, K., Ojima, Y., Tanaka, K., Tanaka, S., Aoshima, K., and others. (2010). *MassBank: a public repository for sharing mass spectral data for life sciences*. Journal of Mass Spectrometry. 45(7), 703–714.
+- Huerta, R., Vembu, S., Amigó, J., Nowotny, T., and Elad, D. (2016). *Online decorrelation of humidity and temperature in chemical sensors for continuous monitoring*. Chemometrics and Intelligent Laboratory Systems. 157, 169–176.
+- Hyvärinen, A., Karhunen, J., and Oja, E. (2001). *Independent Component Analysis*. Wiley.
+- Hämäläinen, M., Hari, R., Ilmoniemi, R., Knuutila, J., and Lounasmaa, O. (1993). *Magnetoencephalography—theory, instrumentation, and applications to noninvasive studies of the working human brain*. Reviews of Modern Physics. 65(2), 413–497.
+- James, P. (2026). *Towards Interoperable Digital Olfaction: A Modular Feature Framework for Metal-Oxide Semiconductor Electronic Noses*. Zenodo. doi:10.5281/zenodo.21243013.
+- Kennard, R. and Stone, L. (1969). *Computer aided design of experiments*. Technometrics. 11(1), 137–148.
+- Klein, F. (1872). *Vergleichende Betrachtungen über neuere geometrische Forschungen*. Deichert.
+- Klein, F. (1893). *A comparative review of recent researches in geometry*. Bulletin of the American Mathematical Society. 2(10), 215–249.
+- Kondor, R. and Trivedi, S. (2018). *On the generalization of equivariance and convolution in neural networks to the action of compact groups*. Proceedings of the 35th International Conference on Machine Learning. 2747–2755.
+- Krantz, D., Luce, R., Suppes, P., and Tversky, A. (1971). *Foundations of Measurement, Vol. I: Additive and Polynomial Representations*. Academic Press.
+- Ljosa, V., Sokolnicki, K., and Carpenter, A. (2012). *Annotated high-throughput microscopy image sets for validation*. Nature Methods. 9(7), 637.
+- Loman, N., Quick, J., and Simpson, J. (2015). *A complete bacterial genome assembled de novo using only nanopore sequencing data*. Nature Methods. 12(8), 733–735.
+- Long, M., Cao, Y., Wang, J., and Jordan, M. (2015). *Learning transferable features with deep adaptation networks*. Proceedings of the 32nd International Conference on Machine Learning. 97–105.
+- Luce, R. and Suppes, P. (2002). *Representational measurement theory*. Stevens' Handbook of Experimental Psychology.
+- Mansour, R. (2026). *Raman spectra analysis*. https://github.com/RimaMansour/Raman-spectraAnalysis.
+- Marco, S. and Gutiérrez-Gálvez, A. (2012). *Signal and data processing for machine olfaction and chemical sensing: a review*. IEEE Sensors Journal. 12(11), 3189–3214.
+- Martens, H. and N\aes, T. (1989). *Multivariate Calibration*. Wiley.
+- Mumford, D., Fogarty, J., and Kirwan, F. (1994). *Geometric Invariant Theory*. Springer.
+- Narens, L. (1985). *Abstract Measurement Theory*. MIT Press.
+- NCBI. (2026). *Escherichia phage phiX174, complete genome (NC\_001422.1)*. https://www.ncbi.nlm.nih.gov/nuccore/NC_001422.1.
+- Nunez, P. and Srinivasan, R. (2006). *Electric Fields of the Brain: The Neurophysics of EEG*. Oxford University Press.
+- Olver, P. (1995). *Equivalence, Invariants and Symmetry*. Cambridge University Press.
+- Pan, S. and Yang, Q. (2010). *A survey on transfer learning*. IEEE Transactions on Knowledge and Data Engineering. 22(10), 1345–1359.
+- Pasquini, C. (2003). *Near infrared spectroscopy: fundamentals, practical aspects and analytical applications*. Journal of the Brazilian Chemical Society. 14(2), 198–219.
+- Peters, J., Janzing, D., and Schölkopf, B. (2017). *Elements of Causal Inference: Foundations and Learning Algorithms*. MIT Press.
+- Quince, C., Walker, A., Simpson, J., Loman, N., and Segata, N. (2017). *Shotgun metagenomics, from sampling to analysis*. Nature Biotechnology. 35(9), 833–844.
+- Rhoads, A. and Au, K. (2015). *PacBio sequencing and its applications*. Genomics, Proteomics & Bioinformatics. 13(5), 278–289.
+- Roberts, F. (1979). *Measurement Theory with Applications to Decisionmaking, Utility, and the Social Sciences*. Addison-Wesley.
+- Röck, F., Barsan, N., and Weimar, U. (2008). *Electronic nose: current status and future trends*. Chemical Reviews. 108(2), 705–725.
+- Sanger, F., Nicklen, S., and Coulson, A. (1977). *DNA sequencing with chain-terminating inhibitors*. Proceedings of the National Academy of Sciences. 74(12), 5463–5467.
+- Schalk, G., McFarland, D., Hinterberger, T., Birbaumer, N., and Wolpaw, J. (2004). *BCI2000: a general-purpose brain-computer interface (BCI) system*. IEEE Transactions on Biomedical Engineering. 51(6), 1034–1043.
+- scikit-image developers. (2026). *cells3d: 3D fluorescence microscopy image of cells*. scikit-image data module.
+- Shendure, J. and Ji, H. (2008). *Next-generation DNA sequencing*. Nature Biotechnology. 26(10), 1135–1145.
+- Shenk, J. and Westerhaus, M. (1991). *Population definition, sample selection, and calibration procedures for near infrared reflectance spectroscopy*. Crop Science. 31(2), 469–474.
+- Siesler, H., Ozaki, Y., Kawata, S., and Heise, H. (2002). *Near-Infrared Spectroscopy: Principles, Instruments, Applications*. Wiley-VCH.
+- Stevens, S. (1946). *On the theory of scales of measurement*. Science. 103(2684), 677–680.
+- Stevens, S. (1951). *Mathematics, measurement, and psychophysics*. Handbook of Experimental Psychology. 1–49.
+- Sumner, L., Amberg, A., Barrett, D., Beale, M., Beger, R., Daykin, C., Fan, T., Fiehn, O., Goodacre, R., Griffin, J., and others. (2007). *Proposed minimum reporting standards for chemical analysis*. Metabolomics. 3(3), 211–221.
+- Sun, B., Feng, J., and Saenko, K. (2016). *Return of frustratingly easy domain adaptation*. Proceedings of the AAAI Conference on Artificial Intelligence. 30.
+- van der Walt, S., Schönberger, J., Nunez-Iglesias, J., Boulogne, F., Warner, J., Yager, N., Gouillart, E., and Yu, T. (2014). *scikit-image: image processing in Python*. PeerJ. 2, e453.
+- Vergara, A. (2012). *Gas Sensor Array Drift Dataset*. UCI Machine Learning Repository.
+- Vergara, A., Vembu, S., Ayhan, T., Ryan, M., Homer, M., and Huerta, R. (2012). *Chemical gas sensor drift compensation using classifier ensembles*. Sensors and Actuators B: Chemical. 166–167, 320–329.
+- Wang, Y. and Kowalski, B. (1992). *Calibration transfer and measurement stability of near-infrared spectrometers*. Applied Spectroscopy. 46(5), 764–771.
+- Weyl, H. (1939). *The Classical Groups: Their Invariants and Representations*. Princeton University Press.
+- Wishart, D., Guo, A., Oler, E., Wang, F., Anjum, A., Peters, H., Dizon, R., Sayeeda, Z., Tian, S., Lee, B., and others. (2022). *HMDB 5.0: the Human Metabolome Database for 2022*. Nucleic Acids Research. 50(D1), D622–D631.
+- Wold, S., Sjöström, M., and Eriksson, L. (2001). *PLS-regression: a basic tool of chemometrics*. Chemometrics and Intelligent Laboratory Systems. 58(2), 109–130.
+- Workman, J. (2018). *A review of calibration transfer practices and instrument differences in spectroscopy*. Applied Spectroscopy. 72(3), 340–365.
+- Workman, J. and Weyer, L. (2012). *Practical Guide to Interpretive Near-Infrared Spectroscopy*. CRC Press.
+- Zhou, K., Liu, Z., Qiao, Y., Xiang, T., and Loy, C. (2023). *Domain generalization: a survey*. IEEE Transactions on Pattern Analysis and Machine Intelligence. 45(4), 4396–4415.
+- Zook, J., Hansen, N., Olson, N., Chapman, L., Mullikin, J., Xiao, C., Sherry, S., Koren, S., Phillippy, A., and others. (2020). *A robust benchmark for detection of germline large deletions and insertions*. Nature Biotechnology. 38(11), 1347–1355.

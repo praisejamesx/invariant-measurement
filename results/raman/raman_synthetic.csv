@@ -1,0 +1,16 @@
+group,representation,rep,accuracy
+affine,raw,0,0.6111111111111112
+affine,snv,0,0.8
+affine,invariant,0,0.7388888888888889
+affine,raw,1,0.6
+affine,snv,1,0.6
+affine,invariant,1,0.5388888888888889
+affine,raw,2,0.4
+affine,snv,2,0.25555555555555554
+affine,invariant,2,0.7777777777777778
+affine,raw,3,0.4
+affine,snv,3,0.40555555555555556
+affine,invariant,3,0.8166666666666667
+affine,raw,4,0.6
+affine,snv,4,0.8
+affine,invariant,4,0.3277777777777778

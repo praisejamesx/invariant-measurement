@@ -1,0 +1,38 @@
+[
+  {
+    "gas": 1,
+    "n_batches": 8,
+    "n_ratio_pairs": 120,
+    "median_relative_MAD": 0.061994832142599224
+  },
+  {
+    "gas": 2,
+    "n_batches": 7,
+    "n_ratio_pairs": 120,
+    "median_relative_MAD": 0.05951010539021083
+  },
+  {
+    "gas": 3,
+    "n_batches": 8,
+    "n_ratio_pairs": 120,
+    "median_relative_MAD": 0.28522736815591276
+  },
+  {
+    "gas": 4,
+    "n_batches": 9,
+    "n_ratio_pairs": 120,
+    "median_relative_MAD": 0.09282363450393163
+  },
+  {
+    "gas": 5,
+    "n_batches": 8,
+    "n_ratio_pairs": 120,
+    "median_relative_MAD": 0.04063174434550924
+  },
+  {
+    "gas": 6,
+    "n_batches": 4,
+    "n_ratio_pairs": 120,
+    "median_relative_MAD": 0.052512954356562835
+  }
+]

@@ -1,0 +1,1167 @@
+{
+  "n_samples": 80,
+  "n_wavelengths": 700,
+  "consistency": [
+    {
+      "pair": "m5->mp5",
+      "representation": "raw",
+      "entrywise_r2": 0.9451268568185354,
+      "corr": 0.999118487309596,
+      "rmse": 0.04434653247904139
+    },
+    {
+      "pair": "m5->mp5",
+      "representation": "snv",
+      "entrywise_r2": 0.9994953901101694,
+      "corr": 0.9997476950550848,
+      "rmse": 0.02246352353996611
+    },
+    {
+      "pair": "m5->mp5",
+      "representation": "invariant",
+      "entrywise_r2": 0.8779849543062549,
+      "corr": 0.9667411912586227,
+      "rmse": 0.0810066433704765
+    },
+    {
+      "pair": "m5->mp6",
+      "representation": "raw",
+      "entrywise_r2": 0.9119051902570563,
+      "corr": 0.9990725035457166,
+      "rmse": 0.05606118374170066
+    },
+    {
+      "pair": "m5->mp6",
+      "representation": "snv",
+      "entrywise_r2": 0.9994348591855184,
+      "corr": 0.9997174295927592,
+      "rmse": 0.02377269051835568
+    },
+    {
+      "pair": "m5->mp6",
+      "representation": "invariant",
+      "entrywise_r2": 0.894595963749966,
+      "corr": 0.9699014292836242,
+      "rmse": 0.07346947373602439
+    },
+    {
+      "pair": "mp5->mp6",
+      "representation": "raw",
+      "entrywise_r2": 0.9957787892590595,
+      "corr": 0.9998688734983786,
+      "rmse": 0.012271725155647374
+    },
+    {
+      "pair": "mp5->mp6",
+      "representation": "snv",
+      "entrywise_r2": 0.9999044021339063,
+      "corr": 0.9999522010669544,
+      "rmse": 0.00977741612562617
+    },
+    {
+      "pair": "mp5->mp6",
+      "representation": "invariant",
+      "entrywise_r2": 0.9721955283498241,
+      "corr": 0.9869353696216748,
+      "rmse": 0.037734242105885885
+    }
+  ],
+  "group_fit": [
+    {
+      "pair": "m5->mp5",
+      "identity": 0.9438071988520327,
+      "global_affine": 0.9978531703118847,
+      "per_lambda_affine": 0.9985799541699165
+    },
+    {
+      "pair": "m5->mp6",
+      "identity": 0.9109403372355209,
+      "global_affine": 0.9978632126683498,
+      "per_lambda_affine": 0.9985243377047407
+    },
+    {
+      "pair": "mp5->mp6",
+      "identity": 0.995872227568187,
+      "global_affine": 0.9997236012733172,
+      "per_lambda_affine": 0.9998269882719137
+    }
+  ],
+  "within_cv": [
+    {
+      "instrument": "m5",
+      "property": "Protein",
+      "representation": "raw",
+      "cv_r2": 0.9244293863141426
+    },
+    {
+      "instrument": "m5",
+      "property": "Protein",
+      "representation": "snv",
+      "cv_r2": 0.9390169227003503
+    },
+    {
+      "instrument": "m5",
+      "property": "Protein",
+      "representation": "invariant",
+      "cv_r2": 0.9229654867911041
+    },
+    {
+      "instrument": "mp5",
+      "property": "Protein",
+      "representation": "raw",
+      "cv_r2": 0.9260327902405022
+    },
+    {
+      "instrument": "mp5",
+      "property": "Protein",
+      "representation": "snv",
+      "cv_r2": 0.9013986008797656
+    },
+    {
+      "instrument": "mp5",
+      "property": "Protein",
+      "representation": "invariant",
+      "cv_r2": 0.91821132333839
+    },
+    {
+      "instrument": "mp6",
+      "property": "Protein",
+      "representation": "raw",
+      "cv_r2": 0.9148811587845526
+    },
+    {
+      "instrument": "mp6",
+      "property": "Protein",
+      "representation": "snv",
+      "cv_r2": 0.8958598575373448
+    },
+    {
+      "instrument": "mp6",
+      "property": "Protein",
+      "representation": "invariant",
+      "cv_r2": 0.9198965573528636
+    }
+  ],
+  "protein_transfer": [
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "calibrated",
+      "r2_mean": 0.9079553116806508,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1524891979537094,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "invariant",
+      "r2_mean": 0.8337709668532197,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2049241554314975,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "pds",
+      "r2_mean": 0.9049926300167307,
+      "r2_std": 0.0,
+      "rmse_mean": 0.15492387903236388,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "raw",
+      "r2_mean": -4.55376093111841,
+      "r2_std": 0.0,
+      "rmse_mean": 1.1844951995108217,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "snv",
+      "r2_mean": -5.969882321916546,
+      "r2_std": 0.0,
+      "rmse_mean": 1.3269435178554858,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "calibrated",
+      "r2_mean": 0.8863808239822311,
+      "r2_std": 0.0,
+      "rmse_mean": 0.16942033343485902,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "invariant",
+      "r2_mean": 0.8548329066738674,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1915022164970338,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "pds",
+      "r2_mean": 0.8837977380700075,
+      "r2_std": 0.0,
+      "rmse_mean": 0.17133536156102902,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "raw",
+      "r2_mean": -5.092706105044171,
+      "r2_std": 0.0,
+      "rmse_mean": 1.240637285760675,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "snv",
+      "r2_mean": -8.24088397203214,
+      "r2_std": 0.0,
+      "rmse_mean": 1.5279054256527753,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "calibrated",
+      "r2_mean": 0.9026765212063307,
+      "r2_std": 0.0,
+      "rmse_mean": 0.15712545589951138,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "invariant",
+      "r2_mean": 0.863699916086824,
+      "r2_std": 0.0,
+      "rmse_mean": 0.18594555466140192,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "pds",
+      "r2_mean": 0.7240005444174773,
+      "r2_std": 0.0,
+      "rmse_mean": 0.264601225557492,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "raw",
+      "r2_mean": -9.850630467399176,
+      "r2_std": 0.0,
+      "rmse_mean": 1.659071967420789,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "snv",
+      "r2_mean": -1.865670658286939,
+      "r2_std": 0.0,
+      "rmse_mean": 0.8526108934754729,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "calibrated",
+      "r2_mean": 0.9155357613547693,
+      "r2_std": 0.0,
+      "rmse_mean": 0.14637744911388362,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "invariant",
+      "r2_mean": 0.8510037544902282,
+      "r2_std": 0.0,
+      "rmse_mean": 0.19441304441320012,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "pds",
+      "r2_mean": 0.6968799199140092,
+      "r2_std": 0.0,
+      "rmse_mean": 0.27729694961939844,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "raw",
+      "r2_mean": 0.9055791473147267,
+      "r2_std": 0.0,
+      "rmse_mean": 0.15476462428300394,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Protein",
+      "representation": "snv",
+      "r2_mean": 0.939995338322214,
+      "r2_std": 0.0,
+      "rmse_mean": 0.12337587176785395,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "calibrated",
+      "r2_mean": 0.9328055041043142,
+      "r2_std": 0.0,
+      "rmse_mean": 0.13055823567396158,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "invariant",
+      "r2_mean": 0.9096072578235024,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1514273085006649,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "pds",
+      "r2_mean": 0.8869384528941324,
+      "r2_std": 0.0,
+      "rmse_mean": 0.16935377603039398,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "raw",
+      "r2_mean": -4.328939980716318,
+      "r2_std": 0.0,
+      "rmse_mean": 1.162673668313177,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Protein",
+      "representation": "snv",
+      "r2_mean": -2.440297514629939,
+      "r2_std": 0.0,
+      "rmse_mean": 0.9341904500202137,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "calibrated",
+      "r2_mean": 0.9195123369496354,
+      "r2_std": 0.0,
+      "rmse_mean": 0.14289008066290773,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "invariant",
+      "r2_mean": 0.8870367255581086,
+      "r2_std": 0.0,
+      "rmse_mean": 0.16928015920310702,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "pds",
+      "r2_mean": 0.8775858910287246,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1762191736417298,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "raw",
+      "r2_mean": 0.8474063210089147,
+      "r2_std": 0.0,
+      "rmse_mean": 0.19674590160796412,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Protein",
+      "representation": "snv",
+      "r2_mean": 0.723454764499083,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2648625236357055,
+      "rmse_std": 0.0
+    }
+  ],
+  "moisture_transfer": [
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "calibrated",
+      "r2_mean": 0.3605435782517148,
+      "r2_std": 0.0,
+      "rmse_mean": 0.3053812639204673,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "invariant",
+      "r2_mean": -0.03242102402213254,
+      "r2_std": 0.0,
+      "rmse_mean": 0.38803002486441757,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "pds",
+      "r2_mean": 0.4968910801294932,
+      "r2_std": 0.0,
+      "rmse_mean": 0.27087437376287726,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "raw",
+      "r2_mean": -12.730826892703325,
+      "r2_std": 0.0,
+      "rmse_mean": 1.415093895997658,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "snv",
+      "r2_mean": -42.24453635572343,
+      "r2_std": 0.0,
+      "rmse_mean": 2.5113227693308726,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "calibrated",
+      "r2_mean": 0.2435533012337403,
+      "r2_std": 0.0,
+      "rmse_mean": 0.3321437446094856,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "invariant",
+      "r2_mean": -0.24113210486606396,
+      "r2_std": 0.0,
+      "rmse_mean": 0.4254474417823328,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "pds",
+      "r2_mean": 0.3959712416947636,
+      "r2_std": 0.0,
+      "rmse_mean": 0.29680124597577456,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "raw",
+      "r2_mean": -14.401915350981398,
+      "r2_std": 0.0,
+      "rmse_mean": 1.498733026877804,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "m5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "snv",
+      "r2_mean": -50.30843777196402,
+      "r2_std": 0.0,
+      "rmse_mean": 2.7354659136311636,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "calibrated",
+      "r2_mean": 0.3688726767018671,
+      "r2_std": 0.0,
+      "rmse_mean": 0.30542540389693495,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "invariant",
+      "r2_mean": 0.5065038670808395,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2700775856335514,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "pds",
+      "r2_mean": 0.47618117486211375,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2782513094049505,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "raw",
+      "r2_mean": -32.23970428680931,
+      "r2_std": 0.0,
+      "rmse_mean": 2.2165383073006577,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "snv",
+      "r2_mean": -31.07908949014032,
+      "r2_std": 0.0,
+      "rmse_mean": 2.1774975858848946,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "calibrated",
+      "r2_mean": 0.7664941481726195,
+      "r2_std": 0.0,
+      "rmse_mean": 0.18577854193549154,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "invariant",
+      "r2_mean": 0.6179877768098219,
+      "r2_std": 0.0,
+      "rmse_mean": 0.23762126045132154,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "pds",
+      "r2_mean": 0.8286538106528651,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1591416625599665,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "raw",
+      "r2_mean": -3.3585845763957236,
+      "r2_std": 0.0,
+      "rmse_mean": 0.802637422319596,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp5",
+      "target": "mp6",
+      "property": "Moisture",
+      "representation": "snv",
+      "r2_mean": -3.579251107204814,
+      "r2_std": 0.0,
+      "rmse_mean": 0.822704542427983,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "calibrated",
+      "r2_mean": 0.03459013220659479,
+      "r2_std": 0.0,
+      "rmse_mean": 0.3733596937859143,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "invariant",
+      "r2_mean": -0.48812979561422454,
+      "r2_std": 0.0,
+      "rmse_mean": 0.46354507482024176,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "pds",
+      "r2_mean": 0.11145114871617545,
+      "r2_std": 0.0,
+      "rmse_mean": 0.35818897959417606,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "raw",
+      "r2_mean": -12.25800582182485,
+      "r2_std": 0.0,
+      "rmse_mean": 1.3836003639769032,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "m5",
+      "property": "Moisture",
+      "representation": "snv",
+      "r2_mean": 0.5634115325607505,
+      "r2_std": 0.0,
+      "rmse_mean": 0.25107744159925083,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "calibrated",
+      "r2_mean": 0.9009162204349819,
+      "r2_std": 0.0,
+      "rmse_mean": 0.11961147532111008,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "invariant",
+      "r2_mean": 0.8985514910194372,
+      "r2_std": 0.0,
+      "rmse_mean": 0.12103038063469962,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "pds",
+      "r2_mean": 0.6488040807455755,
+      "r2_std": 0.0,
+      "rmse_mean": 0.22518854527538817,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "raw",
+      "r2_mean": -1.9859324485711345,
+      "r2_std": 0.0,
+      "rmse_mean": 0.6566161405195227,
+      "rmse_std": 0.0
+    },
+    {
+      "source": "mp6",
+      "target": "mp5",
+      "property": "Moisture",
+      "representation": "snv",
+      "r2_mean": 0.5438503618343338,
+      "r2_std": 0.0,
+      "rmse_mean": 0.25664052335834225,
+      "rmse_std": 0.0
+    }
+  ],
+  "reference_scaling": [
+    {
+      "n_references": 2,
+      "representation": "calibrated",
+      "r2_mean": 0.8569701696890668,
+      "r2_std": 0.0,
+      "rmse_mean": 0.18969413980361916,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 2,
+      "representation": "invariant",
+      "r2_mean": 0.8236287169798399,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2106466418253185,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 3,
+      "representation": "calibrated",
+      "r2_mean": 0.8612100284615817,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1880607061218997,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 3,
+      "representation": "invariant",
+      "r2_mean": 0.8343291562913564,
+      "r2_std": 0.0,
+      "rmse_mean": 0.20546699110001182,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 5,
+      "representation": "calibrated",
+      "r2_mean": 0.9079553116806508,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1524891979537094,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 5,
+      "representation": "invariant",
+      "r2_mean": 0.8337709668532197,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2049241554314975,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 5,
+      "representation": "pds",
+      "r2_mean": 0.9049926300167307,
+      "r2_std": 0.0,
+      "rmse_mean": 0.15492387903236388,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 10,
+      "representation": "calibrated",
+      "r2_mean": 0.9256601289162802,
+      "r2_std": 0.0,
+      "rmse_mean": 0.14008411489928685,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 10,
+      "representation": "invariant",
+      "r2_mean": 0.8249721453309322,
+      "r2_std": 0.0,
+      "rmse_mean": 0.21494709174434004,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 10,
+      "representation": "pds",
+      "r2_mean": 0.9411779428208733,
+      "r2_std": 0.0,
+      "rmse_mean": 0.12460862193447209,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 20,
+      "representation": "calibrated",
+      "r2_mean": 0.9202180503234191,
+      "r2_std": 0.0,
+      "rmse_mean": 0.1425755141514478,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 20,
+      "representation": "invariant",
+      "r2_mean": 0.8007078995286243,
+      "r2_std": 0.0,
+      "rmse_mean": 0.2253396762640319,
+      "rmse_std": 0.0
+    },
+    {
+      "n_references": 20,
+      "representation": "pds",
+      "r2_mean": 0.9166769321716257,
+      "r2_std": 0.0,
+      "rmse_mean": 0.14570526651203689,
+      "rmse_std": 0.0
+    }
+  ],
+  "anchor_sensitivity": [
+    {
+      "a": 0,
+      "b": 9,
+      "conditioning_score": 0.01233801624027432,
+      "r2": -116546.30081319199,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "conditioning_score": 0.8034073505727727,
+      "r2": 0.8182858376047458,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 1,
+      "b": 68,
+      "conditioning_score": 0.04978594266217538,
+      "r2": -3416.9443332120295,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 2,
+      "b": 61,
+      "conditioning_score": 0.3085200123578155,
+      "r2": 0.6414256572366164,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 5,
+      "b": 70,
+      "conditioning_score": 0.44928186446598356,
+      "r2": -29.43227983050519,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 6,
+      "b": 23,
+      "conditioning_score": 0.14679230950892794,
+      "r2": -35795.41648055598,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 14,
+      "b": 66,
+      "conditioning_score": 1.3226864578215305,
+      "r2": 0.8375430993429149,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 20,
+      "b": 45,
+      "conditioning_score": 0.1841653643507162,
+      "r2": -960.4890157973701,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 20,
+      "b": 49,
+      "conditioning_score": 0.6725504297909997,
+      "r2": 0.7924839101618947,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 21,
+      "b": 24,
+      "conditioning_score": 0.04627578503346599,
+      "r2": -492.3173908378701,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 26,
+      "b": 60,
+      "conditioning_score": 1.961688332235853,
+      "r2": 0.9014894151632172,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 28,
+      "b": 41,
+      "conditioning_score": 2.6253742585478093,
+      "r2": 0.906124538896651,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 30,
+      "b": 36,
+      "conditioning_score": 0.021538035211919593,
+      "r2": -160.6153093486004,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 30,
+      "b": 41,
+      "conditioning_score": 0.12234677490798092,
+      "r2": -612614.990423929,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 30,
+      "b": 70,
+      "conditioning_score": 0.9608274945780435,
+      "r2": 0.8834765906403981,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 31,
+      "b": 68,
+      "conditioning_score": 0.10920683436650323,
+      "r2": -1.5959549514184297,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 32,
+      "b": 33,
+      "conditioning_score": 0.6196568647002658,
+      "r2": -9.543549839811963,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 33,
+      "b": 38,
+      "conditioning_score": 1.4264294444159271,
+      "r2": 0.8846415251306313,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 39,
+      "b": 48,
+      "conditioning_score": 0.9803713864191457,
+      "r2": 0.889056000510236,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 42,
+      "b": 52,
+      "conditioning_score": 1.452907375151088,
+      "r2": 0.8801384230747689,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 44,
+      "b": 74,
+      "conditioning_score": 3.5824454519565796,
+      "r2": 0.7872798701981681,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 45,
+      "b": 57,
+      "conditioning_score": 0.01977436750743957,
+      "r2": -4.798933685788623,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 47,
+      "b": 56,
+      "conditioning_score": 0.15980789891576,
+      "r2": -234299.78020624767,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 50,
+      "b": 57,
+      "conditioning_score": 0.10755533445295977,
+      "r2": -3816.203454856227,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 50,
+      "b": 67,
+      "conditioning_score": 0.5981818499490119,
+      "r2": 0.6827397847367838,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 51,
+      "b": 64,
+      "conditioning_score": 0.007056552327920404,
+      "r2": -0.07304401573928843,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 53,
+      "b": 64,
+      "conditioning_score": 1.3051810754696451,
+      "r2": 0.7989496874978006,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 54,
+      "b": 76,
+      "conditioning_score": 4.008137473650112,
+      "r2": 0.9273453086013776,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 55,
+      "b": 66,
+      "conditioning_score": 0.7061724823194092,
+      "r2": -1.8344748913629418,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 63,
+      "b": 78,
+      "conditioning_score": 0.13662542438575825,
+      "r2": -18.459896897841972,
+      "conditioned": false,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    },
+    {
+      "a": 54,
+      "b": 74,
+      "conditioning_score": 4.661848315088007,
+      "r2": 0.8236287169798399,
+      "conditioned": true,
+      "source": "m5",
+      "target": "mp5",
+      "property": "Protein"
+    }
+  ]
+}

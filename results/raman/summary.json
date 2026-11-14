@@ -1,0 +1,75 @@
+{
+  "real": [
+    {
+      "group": "affine",
+      "representation": "invariant",
+      "mean": 0.5333333333333333,
+      "std": 0.1641219879724436
+    },
+    {
+      "group": "affine",
+      "representation": "raw",
+      "mean": 0.45666666666666667,
+      "std": 0.16854164195519078
+    },
+    {
+      "group": "affine",
+      "representation": "snv",
+      "mean": 0.45,
+      "std": 0.18577347634090421
+    },
+    {
+      "group": "affine_shift",
+      "representation": "invariant",
+      "mean": 0.5333333333333333,
+      "std": 0.1641219879724436
+    },
+    {
+      "group": "affine_shift",
+      "representation": "raw",
+      "mean": 0.45666666666666667,
+      "std": 0.16854164195519078
+    },
+    {
+      "group": "affine_shift",
+      "representation": "snv",
+      "mean": 0.43,
+      "std": 0.2026480143817955
+    },
+    {
+      "group": "identity",
+      "representation": "invariant",
+      "mean": 0.5333333333333333,
+      "std": 0.1641219879724436
+    },
+    {
+      "group": "identity",
+      "representation": "raw",
+      "mean": 0.6633333333333333,
+      "std": 0.23922339746458873
+    },
+    {
+      "group": "identity",
+      "representation": "snv",
+      "mean": 0.54,
+      "std": 0.22110831935702668
+    }
+  ],
+  "synthetic": [
+    {
+      "representation": "invariant",
+      "mean": 0.64,
+      "std": 0.20474313929023297
+    },
+    {
+      "representation": "raw",
+      "mean": 0.5222222222222223,
+      "std": 0.11166528467912101
+    },
+    {
+      "representation": "snv",
+      "mean": 0.5722222222222222,
+      "std": 0.24113927126900783
+    }
+  ]
+}
