@@ -1,7 +1,7 @@
 # Instrument Groups and Invariants: A Physics-Derived Framework for Cross-Instrument Measurement
 
 **Praise James**  
-OpenSmell / CogLab  
+OpenSmell / Eigenware Labs 
 Draft — November 2026
 
 ---
@@ -1449,7 +1449,15 @@ data. EEG, Raman, and phiX174 data are downloaded by their experiment scripts.
 The data are not committed. The code is in this repository; the paper and
 explainer are `paper/draft.md` and `docs/explainer.md`.
 
-**Compile.**
+**Compile.** The checked-in build path needs only Pandoc and LibreOffice:
+
+```bash
+python paper/build_pdf.py
+```
+
+It runs Pandoc to DOCX, LibreOffice to PDF, and then fixes table page breaks
+and duplicate figure captions; intermediate files go to `paper/build/`. With a
+LaTeX toolchain installed, the direct route is:
 
 ```bash
 pandoc paper/draft.md --bibliography=paper/refs.bib \

@@ -23,8 +23,10 @@ assume and states when no invariant can exist.
 
 ## Read this first
 
-- **Paper:** [`paper/draft.md`](paper/draft.md) — formal framework, theorems,
-  experiments, dataset-fitness table, limitations.
+- **Paper (PDF):** [`paper/draft.pdf`](paper/draft.pdf) — compiled 47-page
+  draft.
+- **Paper (source):** [`paper/draft.md`](paper/draft.md) — formal framework,
+  theorems, experiments, dataset-fitness table, limitations.
 - **Plain-English explainer:** [`docs/explainer.md`](docs/explainer.md) — the
   two-rulers/one-table intuition, logs, groups, calibration, and what each
   modality shows.
@@ -59,7 +61,9 @@ experiments/
   fitness.py             builds results/fitness.csv / .md
   make_references.py     builds paper/references.md from refs.bib
 paper/
-  draft.md               paper draft
+  draft.md               paper source
+  draft.pdf              compiled PDF
+  build_pdf.py           PDF build (Pandoc -> DOCX -> LibreOffice)
   refs.bib               bibliography (source of truth)
   references.md          generated author-year list
   figures/               generated figures (PDF)
@@ -99,7 +103,17 @@ The experiments download their own data on first run. The download script
 records provenance and hashes in `data/manifest.json`. The data are not
 committed.
 
-Compile the paper:
+Compile the paper. The repository build works without a TeX installation:
+
+```bash
+python paper/build_pdf.py
+```
+
+It uses Pandoc for DOCX and LibreOffice for the final PDF, then fixes table
+page breaks and duplicate figure captions. The intermediate files go to
+`paper/build/` (ignored by git).
+
+If you have a LaTeX toolchain, the direct route is:
 
 ```bash
 pandoc paper/draft.md --bibliography=paper/refs.bib \
