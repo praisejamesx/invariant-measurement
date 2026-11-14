@@ -1453,7 +1453,7 @@ explainer are `paper/draft.md` and `docs/explainer.md`.
 
 ```bash
 pandoc paper/draft.md --bibliography=paper/refs.bib \
-  --citeproc --pdf-engine=xelatex -o paper/draft.pdf
+  --resource-path=paper --citeproc --pdf-engine=xelatex -o paper/draft.pdf
 ```
 
 ## References
