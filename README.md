@@ -270,3 +270,48 @@ transforms are recordings from real second instruments. It does not claim
 priority for invariance, calibration transfer, or domain adaptation. The
 contribution is the decision procedure, the NIR positive case, the
 observability boundaries, the dataset-fitness table, and the honest negatives.
+
+
+# Open Items
+
+## Paper: must-fix before submission
+
+- [ ] Name the regressor and its hyperparameters. Currently unspecified; a reviewer cannot reproduce the NIR result without it. State model class (PLS? ridge?), number of components/lambda, and selection procedure.
+- [ ] State the wavelength interpolation explicitly. m5, mp5, mp6 have different ranges. State the common grid, the interpolation method, and what was discarded.
+- [ ] Hand-verify one NIR pair. Raw transfer of −9.85 is plausible for different optical geometries, but it is also the signature of a misaligned axis, a flipped sign, or a mislabelled column. Recompute m5→mp5 from the raw CSV with no pipeline.
+- [ ] Reorder the paper. Box 1 (three rulers) on page 1. Then the problem. Then Theorem 3 (MOX impossibility) as the lead result. Then NIR as the case where invariance works. The current order reads as a survey.
+- [ ] Replace soft claims with numbers or theorems. Go line by line. "Invariance buys robustness" is not a claim; "the invariant is flat in reference count from 2 to 20 (0.824 to 0.801) while calibration climbs 0.857 to 0.926" is.
+- [ ] Abstract must state: one real cross-instrument dataset, and that broader validation is future work.
+
+## Paper: cut list
+
+- [ ] EEG experiment → one paragraph in discussion, derivation-only.
+- [ ] Microscopy experiment → one paragraph in discussion, derivation-only.
+- [ ] Raman experiment → one paragraph, note n=17 and the wide CIs, call it an anecdote not a result.
+- [ ] Mass spec experiment → one paragraph, fully synthetic, derivation-only.
+- [ ] Sequencing: keep Proposition 1 (non-affine error channel), cut the simulated-reads experiment.
+- [ ] Keep: NIR (the paper), MOX UCI (boundary case), group-stress test (controlled perturbation of real measurements — label it precisely).
+
+## Paper: data needed
+
+- [ ] One more real cross-instrument dataset. Without it this is a short note, not an article. With it, it is an article.
+  - Chemometrics calibration-transfer literature names specific multi-instrument sets (Fearn 2001, Workman 2018).
+  - Candidate: pharmaceutical NIR multi-instrument sets; agricultural NIR with documented instrument metadata.
+  - Alternative: email a lab with two instruments and ask for the same samples run on both. That is how these datasets get made.
+
+## Paper: open questions
+
+- [ ] MDL reformulation. Replace the group with a compression criterion: the invariant is the part of the description that survives re-encoding. Uses the existing hierarchical MDL compressor. Fixes sequencing, handles non-invertible instruments. Three months of work; changes the paper's shape.
+- [ ] Anchor conditioning. Current rule is a heuristic. An information-theoretic criterion for reference selection would be stronger.
+- [ ] Time-varying groups. Drift is a path in the group, not a fixed element. A gauge-theoretic formulation is the natural generalisation.
+- [ ] Automatic group discovery. The group is derived by hand from physics. Can it be inferred from paired data while remaining interpretable?
+
+## Experiments: reproducibility
+
+- [ ] Verify `experiments/download_data.py` produces the manifest with hashes on a clean machine.
+- [ ] Verify every figure regenerates from the committed scripts.
+- [ ] Confirm the numbers in the paper trace to specific CSVs in `results/`.
+
+## Submission
+
+- [ ] Target: 
